@@ -1,0 +1,98 @@
+<div class="wrapper">
+	<div class="container-fluid main-header">
+		<div class="row">
+			<div class="col-md-3">
+				<%= link_to image_tag("aboutimg.png", :border=>0, :class=>"img-responsive my_logo"), root_path, :alt=>"logo" %>
+			</div>
+			<div class="col-md-5">
+				<nav>
+					<ul class="my-navbar">
+						<li>Home</li>
+						<li>About Us</li>
+						<li>Services</li>
+						<li>Blog</li>
+						<li>Career</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-4">
+				<div class="contact-nav">
+					<div class="social-icons">
+						<p>Follow us on:</p>
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</div>
+					<hr class="social-devider" />
+					<p>Contact us:</p>
+					<h1><b>8884488002/3/5</b></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container pics">
+		<div class="row"><!--slide-two-->
+			<div class="col-md-4">
+				<div class="second-slider-left">
+					<h2>FIND THE BEST</h2>
+					<h2>deals in your area</h2>
+					<p>ENTER YOUR ADDRESS TO VIEW</p>
+					<P>LOCAL OFFERS AND PRICING</P>
+					<a href="#" class="btn btn-lg btn-primary">click here <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<%= image_tag "oie_1193154MlYQCi7o.png", :class=>"img-responsive multimedia-image" %>
+			</div>
+			<div class="col-md-4">
+				<div class="second-slider-right-main">
+					<div class="second-slider-right">
+						<div class="fa-icon"><i class="fa fa-cogs fa-4x"></i></div>
+						<div class="text-icon">
+							<h3>EQUIPMENT</h3>
+							<h3>INSTALLATION & SETUP</h3>
+						</div>
+					</div>
+					<div class="second-slider-right">
+						<div class="fa-icon"><i class="fa fa-comments-o fa-4x"></i></div>
+						<div class="text-icon">
+							<h3>CUSTOMER</h3>
+							<h3>SUPPORT CENTER</h3>
+						</div>
+					</div>
+					<div class="second-slider-right">
+						<div class="fa-icon"><i class="fa fa-umbrella fa-4x"></i></div>
+						<div class="text-icon">
+							<h3>CUSTOMER</h3>
+							<h3>GUARANTEE</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--slide-two-end-->
+		<div class="row"><!--slide-one-->
+			<div class="col-md-8">
+				<div class="download-upload">
+					<h1>FAST DOWNLOAD AND</h1>
+					<h1>UPLOAD SPEEDS AT</h1>
+					<h1>AN AFFORDABLE</h1>
+					<h1>PRICE</h1>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<%= image_tag "multimedia-website.png", :class=>"img-responsive multimedia-image" %>
+			</div>
+		</div><!--slide-one-end-->
+		
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$('.pics').cycle({ 
+	    fx:    'fade', 
+	    speed:  3000,
+	    pause:  1 
+	});
+</script>
