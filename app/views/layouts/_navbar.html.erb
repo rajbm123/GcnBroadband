@@ -1,0 +1,32 @@
+<div class="container-fluid main-header">
+	<div class="row">
+		<div class="col-md-3">
+			<%= link_to image_tag("aboutimg.png", :border=>0, :class=>"img-responsive my_logo"), root_path, :alt=>"logo" %>
+		</div>
+		<div class="col-md-5">
+			<nav>
+				<ul class="my-navbar">
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'About Us', about_path %></li>
+					<li><%= link_to 'Plans', plans_path %></li>
+					<li><%= link_to 'Career', career_path %></li>
+					<li><%= link_to 'Contact Us', contact_path %></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="col-md-4">
+			<div class="contact-nav">
+				<div class="social-icons">
+					<p>Follow us on:</p>
+					<i class="fa fa-google-plus" aria-hidden="true"></i>
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</div>
+				<hr class="social-devider" />
+				<p>Contact us:</p>
+				<h1><b>8884488002/3/5</b></h1>
+			</div>
+		</div>
+	</div>
+</div>

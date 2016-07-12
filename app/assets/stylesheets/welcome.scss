@@ -26,12 +26,15 @@ html,body {
 }
 .my-navbar {
 	li {
-		font-size: 17px;
 		list-style: none;
-		font-weight: 600;
-    	line-height: 35px;
-    	font-family: 'Roboto Black';
-    	color: #fff;
+		line-height: 34px;
+		a {
+			text-decoration: none;
+			font-size: 17px;
+			font-weight: 600;
+	    	font-family: 'Roboto Black';
+	    	color: #fff;
+		}
 	}
 }
 .contact-nav {
@@ -39,7 +42,7 @@ html,body {
 	p {
 		margin-bottom: 0;
 		color: #fff;
-		font-size: 16px; 
+		font-size: 14px; 
 		font-weight:500;
 	}
 	h1 {
