@@ -1,6 +1,7 @@
 <div class="wrapper">
 	<%= render 'layouts/navbar' %>
 	<%= render 'slider' %>
+	
 </div>
 <br/>
 <div class="container">
@@ -11,7 +12,7 @@
 				<h3>Home Connection</h3>
 				<div class="panel-devider"></div>
 				<p><i class="fa fa-home fa-5x" aria-hidden="true"></i></p>
-				<a href="#" class="custom-btns">MORE</a>
+				<a href="#simple-dialog" class="custom-btns" data-toggle="modal">MORE</a>
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -20,22 +21,84 @@
 				<h3>Solutions</h3>
 				<div class="panel-devider"></div>
 				<p><i class="fa fa-clock-o fa-5x"></i></p>
-				<a href="#" class="custom-btns">MORE</a>
+				<a href="#simple-dialog-2" class="custom-btns" data-toggle="modal">MORE</a>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="personal-home-connection text-center">
 				<h3>Unlimited Internet</h3>
-				<h3>Usage</h3>
+				<h3>Solutions</h3>
 				<div class="panel-devider"></div>
 				<p><i class="fa fa-globe fa-5x" aria-hidden="true"></i></p>
-				<a href="#" class="custom-btns">MORE</a>
+				<a href="#simple-dialog-3" class="custom-btns" data-toggle="modal">MORE</a>
 			</div>
 		</div>
 	</div>
 </div>
 <br/>
-<%= render 'slider_comments'%>
+<%#= render 'slider_comments'%>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div id="slider-three">
+				<div class="slider-three-slides">
+					<div class="slider-three-slides-inner-1">
+						<h1>Fast download & upload speeds at an affordable price</h1> 
+						<p>When choosing among the best high speed Internet providers, there are several other factors that should be taken into consideration besides just the available download speeds. Upload speeds are important as well, though they probably are not as crucial as download speeds.</p>
+					</div>
+				</div>
+				<div class="slider-three-slides">
+					<div class="slider-three-slides-inner-1">
+						<h1>Unlimited Speed & Unlimited Bandwidth</h1> 
+						<p>Bandwidth denominations ranges from 1Mbps to 1000Mbps and above. Integrated end to end internet bandwidth solutions for corporate and residential with a range of products and services delivered on its on optic fiber backbone infrastructure.</p>
+					</div>
+				</div>
+				<div class="slider-three-slides">
+					<div class="slider-three-slides-inner-1">
+						<h1>Highly Secured Private Network</h1> 
+						<p>A four states private secured network has been maintained. Highly secured connections is offered for MNC's Corporates Telco's BPO's and Private enterprises with an offerable prices. Highly secured hosting server services are provided.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 comment-column">
+			<div id="slider-comments">
+				<div class="comments-block">
+					<div class="user-img">
+						<%= image_tag "raju.jpg", :class=>"img-responsive img-circle user-pic" %>
+					</div>
+					<h4 class="user-name">Raj Bm</h4>
+					<p class="comment-body">
+						<i class="fa fa-quote-left" aria-hidden="true"></i> You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons? Here's how <i class="fa fa-quote-right" aria-hidden="true"></i>
+					</p>
+				</div>
+				<div class="comments-block">
+					<div class="user-img">
+						<%= image_tag "raju.jpg", :class=>"img-responsive img-circle user-pic" %>
+					</div>
+					<h4 class="user-name">Raj Bm</h4>
+					<p class="comment-body">
+						<i class="fa fa-quote-left" aria-hidden="true"></i> You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons? Here's how <i class="fa fa-quote-right" aria-hidden="true"></i>
+					</p>
+				</div>
+				<div class="comments-block">
+					<div class="user-img">
+						<%= image_tag "raju.jpg", :class=>"img-responsive img-circle user-pic" %>
+					</div>
+					<h4 class="user-name">Raj Bm</h4>
+					<p class="comment-body">
+						<i class="fa fa-quote-left" aria-hidden="true"></i> You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons? Here's how <i class="fa fa-quote-right" aria-hidden="true"></i>
+					</p>
+				</div>
+			</div>
+			<div class="slide-directions">
+				<i class="fa fa-arrow-circle-o-left fa-3x" id="prev" aria-hidden="true"></i>
+				<i class="fa fa-arrow-circle-o-right fa-3x"id="next" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+</div>
+<br/>
 <footer class="footer-gcn">
 	<div class="container">
 		<div class="row">
@@ -67,17 +130,80 @@
 		</div>
 	</div>
 </footer>
+<div class="final-div">
+	 Copyright &#9400; 2015 GCN Broadband Pvt. Ltd. - All Rights Reserved.
+</div>
 
+
+<div class="modal fade" id="simple-dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <div class="slider-three-slides-inner-1">
+        	<h1>Fast download & upload speeds at an affordable price</h1> 
+        	<p>When choosing among the best high speed Internet providers, there are several other factors that should be taken into consideration besides just the available download speeds. Upload speeds are important as well, though they probably are not as crucial as download speeds.</p>
+        </div>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="simple-dialog-2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <div class="slider-three-slides-inner-1">
+        	<h1>Unlimited Speed & Unlimited Bandwidth</h1> 
+        	<p>Bandwidth denominations ranges from 1Mbps to 1000Mbps and above. Integrated end to end internet bandwidth solutions for corporate and residential with a range of products and services delivered on its on optic fiber backbone infrastructure.</p>
+        </div>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="simple-dialog-3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <div class="slider-three-slides-inner-1">
+        	<h1>Highly Secured Private Network</h1> 
+        	<p>A four states private secured network has been maintained. Highly secured connections is offered for MNC's Corporates Telco's BPO's and Private enterprises with an offerable prices. Highly secured hosting server services are provided.</p>
+        </div>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script type="text/javascript">
-	$('.pics').cycle({ 
+	$(document).ready(function(){
+		$.material.init()
+	});
+	$('.pics').before('<div id="nav">').cycle({ 
 	    fx:    'fade', 
+        pager: '#nav',
 	    speed:  1000,
 	    pause:  1 
 	});
 	$('#slider-comments').cycle({
-		fx:    'scrollHorz', 
-		speed:  1000,
+		fx:      'scrollVert', 
+		    speed:    300, 
+		    timeout:  3000, 
 		next:          '#next',
-		prev:          '#prev'
+		prev:          '#prev',
+		pause:  1 
+	});
+	$('#slider-three').cycle({
+		fx:    'scrollHorz', 
+		speed:  300,
+		timeout: 5000,
+		pause:  1 
 	});
 </script>
