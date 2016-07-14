@@ -13,6 +13,14 @@ a:focus {
     outline-offset: 0;
     text-decoration: none;
 }
+.special_p {
+	color: #747474;
+	font-size: 18px;
+	margin-top: 30px;
+	font-family: 'Roboto Black';
+	line-height: 30px;
+	text-align: justify;
+}
 .wrapper {
 	background: transparent;
 	min-height: 100%;
@@ -416,7 +424,10 @@ a:focus {
 }
 .footer-gcn {
 	background: #DEDEDE;
-	padding: 15px 0px;
+	padding: 0px 0px;
+	.container {
+		padding-top: 15px;
+	}
 }
 .footer-links {
 	margin: 0 0px 0px 25px;
@@ -478,12 +489,7 @@ body::-webkit-scrollbar-thumb {
 		border: 2px solid #C2C2C2;
 	}
 	p {
-		color: #747474;
-		font-size: 18px;
-		margin-top: 30px;
-		font-family: 'Roboto Black';
-		line-height: 30px;
-		text-align: justify;
+		@extend .special_p;
 	}
 }
 .final-div {
@@ -503,28 +509,152 @@ body::-webkit-scrollbar-thumb {
 	background: #eeeeee;
 }
 
+.aboutus-img {
+	background: image-url('ThingSpeak_World_Map.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	// width: 100%;
+	height: 320px;
+}
 
+.man-png {
+	background: image-url('abt.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 320px;
+}
+.main-heads {
+	font-size: 40px;
+	color: #F40606;
+	font-family: 'Roboto Black';
+	font-weight: 600;
+	margin: 0;
+}
+.bottom-line {
+	width: 100%;
+	border-top: 3px solid #FE0808;
+}
+.about_us_paragrap {
+	@extend .special_p;
+}
+.highlite-network {
+	color: #346499;
+	margin: 15px 0;
+	font-family: 'Roboto Black';
+	font-size: 26px;
+}
 
+.vision-img {
+	width: 100%;
+}
+.vision-about {
+	margin-top: 90px;
+	h4 {
+		font-weight: 600;
+		margin: 10px 0;
+		color: #EB292D;
+		font-family: 'Roboto Black';
+		font-size: 25px;
+		text-decoration: underline;
+		letter-spacing: 1px;
+	}
 
+	p {
+		color: #747474;
+		font-size: 19px;
+		font-family: 'Roboto Black';
+		line-height: 30px;
+		text-align: justify;
+		word-spacing: 1px;
+	}
+}
+.mission-about {
+	margin-top: 90px;
+	h4 {
+		font-weight: 600;
+		margin: 10px 0;
+		color: #3ABDDA;
+		font-family: 'Roboto Black';
+		font-size: 25px;
+		text-decoration: underline;
+		letter-spacing: 1px;
+	}
 
+	p {
+		color: #747474;
+		font-size: 19px;
+		font-family: 'Roboto Black';
+		line-height: 30px;
+		text-align: justify;
+		word-spacing: 1px;
+	}
+}
 
+.values-about {
+	margin-top: 90px;
+	h4 {
+		font-weight: 600;
+		margin: 10px 0;
+		color: #19B0A6;
+		font-family: 'Roboto Black';
+		font-size: 25px;
+		text-decoration: underline;
+		letter-spacing: 1px;
+	}
 
+	p {
+		color: #747474;
+		font-size: 19px;
+		font-family: 'Roboto Black';
+		line-height: 30px;
+		text-align: justify;
+		word-spacing: 1px;
+	}
+}
+.honesty-about {
+	margin-top: 90px;
+	h4 {
+		font-weight: 600;
+		margin: 10px 0;
+		color: #8DC0CF;
+		font-family: 'Roboto Black';
+		font-size: 25px;
+		text-decoration: underline;
+		letter-spacing: 1px;
+	}
 
+	p {
+		color: #747474;
+		font-size: 19px;
+		font-family: 'Roboto Black';
+		line-height: 30px;
+		text-align: justify;
+		word-spacing: 1px;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.well {
+	margin-bottom: 0 !important;
+	background: #EEEEEE !important;
+}
+.bussiness-concept {
+	h3 {
+		margin: 0px 0px 15px 0px;
+		color: #F40606;
+		font-family: 'Roboto Black';
+		font-weight: 600;
+	}
+	p{
+		color: #747474;
+		font-size: 17px;
+		font-family: 'Roboto Black';
+		line-height: 30px;
+		text-align: justify;
+		word-spacing: 1px;
+	}
+}
 
 
 

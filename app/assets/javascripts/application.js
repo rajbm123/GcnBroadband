@@ -16,4 +16,21 @@
 //= require bootstrap-material-design
 //= jquery.cycle.all.js
 //= require turbolinks
+//= welcome.js
 //= require_tree .
+
+
+
+var ready;
+ready = function() {
+	$.material.init()
+	var winHeight = $(window).height();
+	var footerHeight = $('.footer-gcn').height();
+	var finalHeight = winHeight-footerHeight;
+	console.log(finalHeight);
+	$(".wrapper-two").css('min-height', finalHeight);
+}
+
+$(document).on('turbolinks:load', ready);
+$(document).ready(ready);
+$(document).bind('page:change', ready);
