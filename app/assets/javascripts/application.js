@@ -14,16 +14,24 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require bootstrap-material-design
+//= require jquery.dropdown.js
 //= jquery.cycle.all.js
 //= require turbolinks
 //= welcome.js
 //= require_tree .
 
 
+$.material.init();
+$(".select").dropdown({"optionClass": "withripple"});
+$().dropdown({autoinit: "select"});
+$("button").click(function() {
+	
+  $("body").append("<select class=select><option>hey</option><option>hey</option></select>");
+});
 
-var ready;
 ready = function() {
-	$.material.init()
+	
+	var ready;
 	var winHeight = $(window).height();
 	var footerHeight = $('.footer-gcn').height();
 	var finalHeight = winHeight-footerHeight;
