@@ -29,6 +29,10 @@ ready = function() {
 	var finalHeight = winHeight-footerHeight;
 	console.log(finalHeight);
 	$(".wrapper-two").css('min-height', finalHeight);
+	$(".wrapper").height(winHeight);
+	var navHeight = $(".main-header").height();
+	var sliderHeight = winHeight-navHeight;
+	$(".pics").height(sliderHeight);
 }
 
 $(document).on('turbolinks:load', ready);
