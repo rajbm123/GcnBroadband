@@ -21,14 +21,16 @@
 //= require_tree .
 
 
-$.material.init();
-$(".select").dropdown({"optionClass": "withripple"});
-$().dropdown({autoinit: "select"});
-$("button").click(function() {
-	
-  $("body").append("<select class=select><option>hey</option><option>hey</option></select>");
-});
 
+function dropdown(){
+	$.material.init();
+	$(".select").dropdown({"optionClass": "withripple"});
+	$(".select").dropdown({autoinit: "select"});
+	$("button").click(function() {
+		
+	  $("body").append("<select class=select><option>hey</option><option>hey</option></select>");
+	});
+}
 ready = function() {
 	
 	var ready;
@@ -46,3 +48,7 @@ ready = function() {
 $(document).on('turbolinks:load', ready);
 $(document).ready(ready);
 $(document).bind('page:change', ready);
+
+$(document).on('turbolinks:load', dropdown);
+$(document).ready(dropdown);
+$(document).bind('page:change', dropdown);
