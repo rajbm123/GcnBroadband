@@ -1,5 +1,6 @@
 <div class="wrapper-two">
 	<%= render 'layouts/navbar' %>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -10,6 +11,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
@@ -18,16 +20,23 @@
 			</div>
 		</div>
 	</div>
+	<br/>
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-md-12">
-				<h3><strong>Home Users</strong></h3>
+				<div class="plan-tab-btns">
+					<div id="tab-plan-one">UNLIMITED PLANS</div>
+					<div id="tab-plan-two">REAL UNLIMITED PLANS</div>
+				</div>
 			</div>
 		</div>
+	</div>
+	<br/>
+	<div class="container" id="tab-contet-one">
 		<div class="row">
 			<div class="col-md-3">
 				<div class="plans-main-block">
-					<h3><i>GCN</i></h3>
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
 					<div class="rate-per-month">
 						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
 						<div><h2>599</h2></div>
@@ -40,69 +49,236 @@
 						</div>
 						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 599</b></p>
 					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Post 25GB</span> <span>, Unlimited usage</span></div>
+						<p>@ 512Kbps</p>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="plans-main-block">
-					
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>649</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">2Mbps</span> <span class="gb">, 50GB</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 649</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Post 50GB</span> <span>, Unlimited usage</span></div>
+						<p>@ 512Kbps</p>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="plans-main-block">
-					
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>699</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">50Mbps</span> <span class="gb">, 20GB</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 699</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Post 20GB</span> <span>, Unlimited usage</span></div>
+						<p>@ 512Kbps</p>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="plans-main-block">
-					
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>777</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">5Mbps</span> <span class="gb">, 75GB</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 777</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Post 75GB</span> <span>, Unlimited usage</span></div>
+						<p>@ 512Kbps</p>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
 				</div>
+			</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="plans-main-block">
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>999</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">20Mbps</span> <span class="gb">, 30GB</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 599</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Post 30GB</span> <span>, Unlimited usage</span></div>
+						<p>@ 512Kbps</p>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="plans-main-block">
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>1045</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">50Mbps</span> <span class="gb">, 50GB</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 1045</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Post 50GB</span> <span>, Unlimited usage</span></div>
+						<p>@ 512Kbps</p>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="plans-main-block">
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>1399</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">20bps</span> <span class="gb">, 100GB</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 1399</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Post 100GB</span> <span>, Unlimited usage</span></div>
+						<p>@ 512Kbps</p>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h3><strong>Enterprise</strong></h3>
-			</div>
-		</div>
+	<div class="container" id="tab-contet-two">
 		<div class="row">
 			<div class="col-md-4">
 				<div class="plans-main-block">
-					
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>700</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">1Mbps</span> <span class="gb">, UNLIMITED</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 700</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Unlimited usage</span> <span>, @ 1Mbps</span></div>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="plans-main-block">
-					
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>1200</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">2Mbps</span> <span class="gb">, UNLIMITED</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 1200</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Unlimited usage</span> <span>, @ 2Mbps</span></div>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="plans-main-block">
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h3><strong>Corporate</strong></h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="plans-main-block">
-					
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="plans-main-block">
-					
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="plans-main-block">
-					
+					<h3><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></h3>
+					<div class="rate-per-month">
+						<div><i class="fa fa-inr" aria-hidden="true"></i></div>
+						<div><h2>2200</h2></div>
+						<div><span>/month</span></div>
+					</div>
+					<div class="plan-description">
+						<div class="speed-bandwidth"><span class="speed-in-mbps">4Mbps</span> <span class="gb">, UNLIMITED</span></div>
+						<div class="speed-fa-icon">
+							<i class="fa fa-tachometer" aria-hidden="true"></i>
+						</div>
+						<p><b><i class="fa fa-inr" aria-hidden="true"></i> 2200</b></p>
+					</div>
+					<div class="plan-description-post">
+						<div class="speed-bandwidth-post"><span class="post">Unlimited usage</span> <span>, @ 2Mbps</span></div>
+					</div>
+					<div class="get-plan-btn text-center">
+						<a href="#" class="btn btn-lg btn-danger">GET NOW</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -110,3 +286,21 @@
 	<br/>
 	<%= render 'care' %>
 </div>
+
+<script type="text/javascript">
+	$("#tab-plan-one").addClass('activTab');
+
+	$("#tab-plan-two").click(function(){
+		$("#tab-plan-one").removeClass('activTab');
+		$(this).addClass('activTab');
+		$("#tab-contet-one").hide();
+		$("#tab-contet-two").fadeIn();
+	});   
+	$("#tab-plan-one").click(function(){
+		$("#tab-plan-two").removeClass('activTab');
+		$(this).addClass('activTab');
+		$("#tab-contet-two").hide();
+		$("#tab-contet-one").fadeIn();
+
+	});  
+</script>
