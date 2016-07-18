@@ -5,37 +5,39 @@
 	
 </div>
 <br/>
-<div class="container">
-	<div class="row">
-		<div class="col-md-4">
-			<div class="personal-home-connection text-center">
-				<h3>Your Personal</h3>
-				<h3>Home Connection</h3>
-				<div class="panel-devider"></div>
-				<p><i class="fa fa-home fa-5x" aria-hidden="true"></i></p>
-				<a href="#simple-dialog" class="custom-btns" data-toggle="modal">MORE</a>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="personal-home-connection text-center">
+					<h3>Your Personal</h3>
+					<h3>Home Connection</h3>
+					<div class="panel-devider"></div>
+					<p><i class="fa fa-home fa-5x" aria-hidden="true"></i></p>
+					<a href="#simple-dialog" class="custom-btns" data-toggle="modal">MORE</a>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="personal-home-connection text-center">
-				<h3>Business Internet</h3>
-				<h3>Solutions</h3>
-				<div class="panel-devider"></div>
-				<p><i class="fa fa-clock-o fa-5x"></i></p>
-				<a href="#simple-dialog-2" class="custom-btns" data-toggle="modal">MORE</a>
+			<div class="col-md-4">
+				<div class="personal-home-connection text-center">
+					<h3>Business Internet</h3>
+					<h3>Solutions</h3>
+					<div class="panel-devider"></div>
+					<p><i class="fa fa-clock-o fa-5x"></i></p>
+					<a href="#simple-dialog-2" class="custom-btns" data-toggle="modal">MORE</a>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="personal-home-connection text-center">
-				<h3>Unlimited Internet</h3>
-				<h3>Solutions</h3>
-				<div class="panel-devider"></div>
-				<p><i class="fa fa-globe fa-5x" aria-hidden="true"></i></p>
-				<a href="#simple-dialog-3" class="custom-btns" data-toggle="modal">MORE</a>
+			<div class="col-md-4">
+				<div class="personal-home-connection text-center">
+					<h3>Unlimited Internet</h3>
+					<h3>Solutions</h3>
+					<div class="panel-devider"></div>
+					<p><i class="fa fa-globe fa-5x" aria-hidden="true"></i></p>
+					<a href="#simple-dialog-3" class="custom-btns" data-toggle="modal">MORE</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
 <br/>
 <%#= render 'slider_comments'%>
 <div class="container">
@@ -109,6 +111,8 @@
 	    fx:    'fade', 
         pager: '#nav',
 	    speed:  1000,
+	    next:          '#nexthome',
+		prev:          '#prevhome',
 	    pause:  1 
 	});
 	$('#slider-comments').cycle({
@@ -125,6 +129,8 @@
 		timeout: 5000,
 		pause:  1 
 	});
+	
+	
 
 
 </script>

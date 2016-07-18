@@ -149,34 +149,27 @@ a:focus {
     width: 95%;
     margin: 0 auto;
 } 
-#nav {
-	text-align: center;
+#nav  {
 	position: absolute;
-	width: 100%;
-	left: 0;
 	right: 0;
-	bottom: 15px;
-	z-index: 5;
+	z-index: 6;
+	bottom: 20px;
+	left: 0;
+	margin: 0 auto;
+	text-align: center;
 }
 #nav a {
 	margin: 0 5px;
-	padding: 5px 15px;
-	background: #EF0707;
-	color: #EEE;
-	outline: 0px solid #EF0707;
+	padding: 7px;
+	background: #dedede;
+	color: #dedede;
 	font-size: 0;
-	border-radius: 4px;
+	border-radius: 50%; 
 	text-decoration: none;
 }
-#nav a.activeSlide { 
-	background: #EF0707; 
-	color: #EEE; 
-	outline: none;
-	padding: 3px 15px;
-}
-#nav a:focus {
-	outline: 3px solid #EF0707;
-	padding: 3px 15px;
+#nav a.activeSlide {
+	background: #F90808 ;
+	font-weight: bold;
 }
 .second-slider-left {
 	margin-top: 90px;
@@ -883,278 +876,196 @@ body::-webkit-scrollbar-thumb {
 	width: 70%;
 	margin: 50px auto 0 auto;
 }
+#plans-slider {
+	// width: 100% !important;
+	.row {
+		width: 100% !important;
+		margin: 0 auto;
+		h1 {
+			margin: 0px;
+		}
+	}
+}
 
+.high-speed-broadband-plan {
+	text-align: center;
+    border: 8px solid #DEDEDE;
+    width: auto;
+    border-radius: 4px;
+    padding: 35px 0;
+    margin-top: 75px;
+    background: #DEDEDE;
+	.high-speed-unlimited-one {
+		p {
+			margin: 0px;
+			font-family: 'Roboto Black';
+			font-size: 32px;
+			font-weight: 600; 
+			color: #676779;
+			margin: 5px 0;
+			font-style: italic;
+			text-shadow: 4px 4px 2px rgba(154, 154, 154, 0.47);
+		}
+	}
+	.high-speed-unlimited-two {
+		h2 {
+			margin: 0px;
+			font-family: 'Roboto Black';
+			font-size: 48px;
+			font-weight: 600;
+			color: #FE0808;
+			margin: 5px 0;
+			text-shadow: 4px 4px 2px rgba(255, 0, 0, 0.44);
+			font-style: italic;
+		}
+	}
+}
+.plans-slider-img {
+	width: 100%;
+	margin-top: 100px;
+}
 
+#prevplan, #nextplan, #prevhome, #nexthome {
+	position: absolute;
+	cursor: pointer;
+	opacity: 0;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	color: #dedede;
+    background: #F90808;
+     height: 100px;
+    width: 50px;
+     line-height: 100px;
+     z-index: 5;
+	top: 55%;
+	font-size: 50px;
+}
+#prevhome, #prevplan {
+   
+    border-radius: 0 0 90px 90px;
+    -moz-border-radius:  0 0 90px 90px;
+    -webkit-border-radius:  0 90px 90px;
+    -webkit-border-radius:  0 90px 90px 0;
+    left: 0;
+    text-align: right;
+    padding-right: 15px;
+}
+#nexthome,#nextplan {
+		border-radius: 90px 0 0 90px;
+		-moz-border-radius:  90px 0 0 90px;
+		-webkit-border-radius:  90px 0 0 90px;
+		-webkit-border-radius:  90px 0 0 90px;
+		right: 0;
+		text-align: left;
+		padding-left: 15px;
 
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-// @import "bootstrap-sprockets";
-// @import "bootstrap";
-// @import "font-awesome";
-// html,body {
-// 	height: 100%;
-// }
-// .wrapper {
-// 	background: image-url('one.jpg');
-// 	min-height: 100%;
-// 	height: 100%;
-// 	background-repeat: no-repeat;
-// 	background-size: 100% 100%;
-// 	background-position: center;
-// }
-// .main-header {
-// 	padding-top: 25px;
-// 	background: rgba(47, 117, 140, 0.22);
-// 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-// 	border-bottom: rgb(32, 134, 168);
-// }
-// .my_logo {
-// 	width: 90%;
-// }
-// .my-navbar {
-// 	li {
-// 		list-style: none;
-// 		line-height: 34px;
-// 		a {
-// 			text-decoration: none;
-// 			font-size: 17px;
-// 			font-weight: 600;
-// 	    	font-family: 'Roboto Black';
-// 	    	color: #fff;
-// 		}
-// 	}
-// }
-// .contact-nav {
-// 	margin-top: 14px;
-// 	p {
-// 		margin-bottom: 0;
-// 		color: #fff;
-// 		font-size: 14px; 
-// 		font-weight:500;
-// 	}
-// 	h1 {
-// 		margin: 5px 0px 5px 0px;
-// 		font-family: 'Roboto Black';
-// 		color: #0C6380;
-// 	}
-// }
-// .download-upload {
-// 	margin-top: 60px;
-// 	h1 {
-// 		color: #fff;
-// 		font: 50px/83px 'Roboto Black';
-// 		letter-spacing: 2px;
-// 		font-weight: 600;
-// 		text-transform: uppercase;
-// 		margin: 0;
-// 		text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-// 	}
-// }
-// .social-icons {
-// 	p {
-// 		margin-bottom: 10px;
-// 		color: #fff;
-// 		font-size: 14px; 
-// 		font-weight:500;
-// 	}
-// 	i {
-// 		width: 45px;
-// 		height: 45px;
-// 		border: 2px solid #fff; 
-// 		text-align: center;
-// 		line-height: 45px;
-// 		font-size: 18px;
-// 		color: #fff;
-// 		border-radius: 50%;
-// 		margin-right: 8px;
-// 		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-// 	}
-// 	// i.fa-google-plus {
-// 	// 	background: #cb2027;
-// 	// 	border: 1px solid #cb2027; 
-// 	// }
-// 	// i.fa-facebook {
-// 	// 	background: #3b5998;
-// 	// 	border: 1px solid #3b5998; 
-// 	// }
-// 	// i.fa-twitter {
-// 	// 	background: #00aced;
-// 	// 	border: 1px solid #00aced; 
-// 	// }
-// }
-// .social-devider {
-// 	margin: 10px 0;
-// 	margin-right: 46%;
-// }
-// .multimedia-image {
-// 	margin: 30px auto 0 auto;
-// }
-// .pics {  
-//     height: calc(100% - 210px);  
-//     width:   100%;  
-//     padding: 0;  
-//     margin:  0;  
-// } 
- 
-// .pics .row {  
-//     padding: 15px;   
-//     top:  0; 
-//     right: 0;
-//     width: 95%;
-//     margin: 0 auto;
-// } 
-// .second-slider-left {
-// 	margin-top: 90px;
-// 	float: right;
-// 	h2 {
-// 		margin: 5px 0;
-// 		color: #fff;  
-// 		font-family: 'Roboto Black';
-// 		&:nth-child(1) {
-// 			font-weight: 600;
-// 			font-size: 35px;
-// 		}
-// 		&:nth-child(2) {
-// 			font-weight: 500;
-// 			margin-bottom: 15px;
-// 		}
-// 	}
-// 	p{
-// 		color: #fff;
-// 		font-size: 16px;
-// 		font-family: 'Roboto Black';
-// 	}
-// 	.btn {
-// 		font-family: 'Roboto Black';
-// 	}
-// }
-// .second-slider-right-main {
-// 	margin-top: 90px;
-// }
-// .second-slider-right {
-// 	margin-bottom: 30px;
-// 	display: flex;
-// 	.text-icon {
-// 		padding-left: 30px;
-// 		h3 {
-// 			font-size: 23px;
-// 			color: #222;
-// 			margin: 0 0 5px 0;;
-// 			font-family: 'Roboto Black';
-// 		}
-// 	}
-// }
-// .multimedia-image-business {
-// 	width: 79%;
-// 	position: absolute;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	margin: 0 auto;
-// }
-// .gcn-title {
-// 	color: #fff;
-// 	float: left;
-// 	margin-top: 90px;
-// 	h1 {
-// 		margin: 0px 0 20px 0;
-// 		font-family: 'Roboto Black';
-// 		font-size: 30px;
-// 		font-weight: 600;
-// 		text-transform: uppercase;
-// 	}
-// 	h3 {
-// 		font-family: 'Roboto Black';
-// 		margin-bottom: 25px;
-// 		font-size: 20px;
-// 	}
-// }
-// .bussiness-broadband-specs {
-// 	margin-top: 75px;
-// 	ul {
-// 		margin: 0;
-// 		padding: 0;
-// 		li {
-// 			list-style: none;
-// 			font-family: 'Roboto Black';
-// 			color: #222;
-// 			font-size: 20px;
-// 			line-height: 58px;
-// 			font-weight: 600;
-// 		}
-// 	}
-// }
-// .btn-slider {
-// 	background: #EF0707 !important;
-// 	color: #fff !important;
-// }
-// .main-gcn-text {
-// 	margin-top: 90px;
-// 	h1 {
-// 		font-weight: 600;
-// 		font-family: 'Roboto Black';
-// 		font-size: 55px;
-// 		color: #fff;
-// 		text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-// 	}
-// 	h3 {
-// 		color: #fff;
-// 		font-family: 'Roboto Black';
-// 		font-size: 26px;
-// 	}
-// 	p{
-// 		font-size: 23px;
-// 		color: #fff;
-// 		font-family: 'Roboto Black';
-// 	}
-// }
-// .family-img-col {
-// 	min-height: 439px;
-// }
-// .multimedia-image-family {
-// 	position: absolute;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	margin: 0 auto;
-// }
-// .personal-home-connection {
-// 	padding: 30px;
-// 	border: 2px solid #fff;
-// 	border-radius: 4px;
-// 	background: #fff;
-// 	h3 {
-// 		margin: 0px;
-// 		color: #EF0707;
-// 		font-family: 'Roboto Black';
-// 		// font-weight: 600;
-// 		font-size: 33px;
-// 		&:nth-child(2) {
-// 			margin-top: 5px;
-// 		}
-// 	}
-// 	.panel-devider {
-// 		width: 30%;
-// 		border-top: 2px solid red;
-// 		margin: 30px auto;
-// 	}
-// 	p {
-// 		margin-bottom: 40px;
-// 		color: #EF0707;
-// 	}
-// }
-// .custom-btns {
-// 	text-decoration: none;
-//     font-size: 15px;
-//     font-weight: 600;
-//     padding: 10px 34px;
-//     border: 2px solid #EF0707;
-//     border-radius: 24px;
-//     color: #EF0707;
-//     &:hover {
-//     	text-decoration: none;
-//     	color: #fff;
-//     	background: #EF0707
-//     }
-// }
+}
+.plan-page-slider:hover #nextplan, .plan-page-slider:hover #prevplan, .main-slider:hover #nexthome, .main-slider:hover #prevhome{
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+#navplan  {
+	position: absolute;
+	right: 0;
+	z-index: 6;
+	bottom: 20px;
+	left: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+#navplan a {
+	margin: 0 5px;
+	padding: 7px;
+	background: #dedede;
+	color: #dedede;
+	font-size: 0;
+	border-radius: 50%; 
+	text-decoration: none;
+}
+#navplan a.activeSlide {
+	background: #F90808 ;
+	font-weight: bold;
+}
+.new-business {
+	text-align: center;
+	width: 360px;
+	margin: 100px auto 0px auto;
+	p.BUSINESS {
+	    position: relative;
+	    overflow: hidden;
+	    font-size: 34px;
+	    color: #F90808;
+	    font-family: 'Roboto Black';
+	    font-weight: 600;
+	    margin: 0;
+	    top: 13px;
+	    
+	    span {
+	        display: inline-block;
+	        vertical-align: baseline;
+	        zoom: 1;
+	        *display: inline;
+	        *vertical-align: auto;
+	        position: relative;
+	        padding: 0 20px;
+
+	        &:before, &:after {
+	            content: '';
+	            display: block;
+	            width: 100%;
+	            position: absolute;
+	            top: 0.73em;
+	            border-top: 4px solid #F90808;
+	        }
+
+	        &:before { right: 100%; }
+	        &:after { left: 100%; }
+	    }
+	}
+	h2 {
+		font-size: 70px;
+		color: #F90808;
+		font-weight: 900;
+		font-family: 'Roboto Black';
+		margin: 0;
+	}
+	.connect-plans {
+		background: #F90808;
+		font-size: 25px;
+		color: #fff;
+		margin: 0;
+		letter-spacing: 15px;
+	}
+}
+.use-it-your-way {
+	position: relative;
+	overflow: hidden;
+	font-size: 25px;
+	color: #F90808;
+	font-family: 'Roboto Black';
+	font-weight: 900;
+	margin: 0;
+	span {
+	    display: inline-block;
+	    vertical-align: baseline;
+	    zoom: 1;
+	    *display: inline;
+	    *vertical-align: auto;
+	    position: relative;
+	    padding: 0 20px;
+
+	    &:before, &:after {
+	        content: '';
+	        display: block;
+	        width: 100%;
+	        position: absolute;
+	        top: 0.73em;
+	        border-top: 4px solid #F90808;
+	    }
+
+	    &:before { right: 100%; }
+	    &:after { left: 100%; }
+	}
+}

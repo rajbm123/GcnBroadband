@@ -1,13 +1,55 @@
 <div class="wrapper-two">
 	<%= render 'layouts/navbar' %>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<%= image_tag 'about-Us1.png', :class => "img-responsive careen-img" %>
+	<div class="plan-page-slider">
+		<i class="fa fa-angle-left fa-5x" id="prevplan" aria-hidden="true"></i>
+		<i class="fa fa-angle-right fa-5x" id="nextplan" aria-hidden="true"></i>
+		<div class="container" id="plans-slider">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="high-speed-broadband-plan">
+						<div class="high-speed-unlimited-one">
+							<p>Surf unlimited @</p>
+							<p>Limited price</p>
+						</div>
+						<div class="high-speed-unlimited-two">
+							<h2>50Mbps, @699</h2>
+							<h2>50gb</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<%= image_tag 'laptop_family.png', :class => "img-responsive plans-slider-img" %>
+				</div>
+				<div class="col-md-4">
+					<div class="high-speed-broadband-plan">
+						<div class="high-speed-unlimited-one">
+							<p>Surf unlimited @</p>
+							<p>Limited price</p>
+						</div>
+						<div class="high-speed-unlimited-two">
+							<h2>20Mbps, @699</h2>
+							<h2>120gb</h2>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<%= image_tag 'Career.png', :class => "img-responsive careen-img" %>
+			<div class="row">
+				<div class="col-md-6">
+					<%= image_tag 'Seo-And-Analytics-Icon.png', :class => "img-responsive plans-slider-img" %>
+				</div>
+				<div class="col-md-6">
+					<div class="new-business">
+						<p class="BUSINESS"><span>NEW BUSINESS</span></p>
+						<h2>CONNECT</h2>
+						<p class="connect-plans">PLANS</p>
+						<p class="use-it-your-way"><span>USE IT YOUR WAY</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -303,4 +345,12 @@
 		$("#tab-contet-one").fadeIn();
 
 	});  
+	$('#plans-slider').before('<div id="navplan">').cycle({
+		fx:    'scrollHorz', 
+		speed:  300,
+		timeout: 4000,
+		next:          '#nextplan',
+		prev:          '#prevplan',
+		pager: '#navplan'
+	});
 </script>

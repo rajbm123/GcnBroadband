@@ -30,6 +30,13 @@ function dropdown(){
 		
 	  $("body").append("<select class=select><option>hey</option><option>hey</option></select>");
 	});
+	$('.group').hide();
+	$('#option1').show();
+	
+	$(".withripple").mouseleave(function(){
+			$('.group').hide();
+			$('#'+$(".fakeinput").val()).show();
+	});
 }
 ready = function() {
 	
@@ -43,6 +50,7 @@ ready = function() {
 	var navHeight = $(".main-header").height();
 	var sliderHeight = winHeight-navHeight;
 	$(".pics").height(sliderHeight);
+	$("#plans-slider").height(sliderHeight);
 }
 
 $(document).on('turbolinks:load', ready);
