@@ -1,6 +1,3 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
@@ -49,7 +46,6 @@ a:focus {
 	    		margin-left: 15px;
 	    		-webkit-transition: margin-left 0.6s; /* Safari */
 	    		transition: margin-left 0.6s;
-	    		
 	    		&:before {
 	    			content: "-- ";
 	    			-webkit-transition: content 0.6s; /* Safari */
@@ -113,18 +109,6 @@ a:focus {
 				    animation:spin 0.5s linear 1;
 		}
 	}
-	// i.fa-google-plus {
-	// 	background: #cb2027;
-	// 	border: 1px solid #cb2027; 
-	// }
-	// i.fa-facebook {
-	// 	background: #3b5998;
-	// 	border: 1px solid #3b5998; 
-	// }
-	// i.fa-twitter {
-	// 	background: #00aced;
-	// 	border: 1px solid #00aced; 
-	// }
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -297,7 +281,6 @@ a:focus {
 		margin: 0px;
 		color: #F40606;
 		font-family: 'Roboto Black';
-		// font-weight: 600;
 		letter-spacing: 1px;
 		font-size: 30px;
 		&:nth-child(2) {
@@ -333,15 +316,12 @@ a:focus {
     	background: #EF0707
     }
 }
-
 #slider-comments {
 	width: 100% !important; 
 	height: 300px !important;
 	background: rgb(238, 238, 238);
 	border-radius: 4px;
 }
-
-
 .slide-directions {
 	width: 100%;
 	margin: 15px auto 0 auto;
@@ -355,18 +335,15 @@ a:focus {
 	i {
 		height: 50px;
 		width: 51px;
-		// background: #676779;
-		// line-height: 50px;
 		text-align: center;
 		color: #CACACA;
 		border-radius: 50%;
-		// box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 		margin: 0 5px;
 		cursor: pointer;
-			transform: rotate(90deg);
-			-webkit-transform: rotate(90deg);
-		    -moz-transform: rotate(90deg);
-		    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 	}
 }
 .comment-column:hover .slide-directions {
@@ -376,9 +353,7 @@ a:focus {
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
 }
-
 .comments-block {
-	// box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	background: rgb(238, 238, 238);
 	padding: 15px;
 	width: 100% !important;
@@ -399,7 +374,6 @@ a:focus {
 			top: -7px;
 			font-size: 12px;
 		}
-
 	}
 }
 .user-img {
@@ -435,8 +409,6 @@ a:focus {
 		}
 	}
 }
-
-
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -495,16 +467,13 @@ body::-webkit-scrollbar-thumb {
 .modal-content {
 	background: #eeeeee;
 }
-
 .aboutus-img {
 	background: image-url('ThingSpeak_World_Map.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	// width: 100%;
 	height: 320px;
 }
-
 .man-png {
 	background: image-url('abt.png');
 	background-position: center;
@@ -533,7 +502,6 @@ body::-webkit-scrollbar-thumb {
 	font-family: 'Roboto Black';
 	font-size: 26px;
 }
-
 .vision-img {
 	width: 100%;
 }
@@ -569,7 +537,6 @@ body::-webkit-scrollbar-thumb {
 		text-decoration: underline;
 		letter-spacing: 1px;
 	}
-
 	p {
 		color: #747474;
 		font-size: 19px;
@@ -579,7 +546,6 @@ body::-webkit-scrollbar-thumb {
 		word-spacing: 1px;
 	}
 }
-
 .values-about {
 	margin-top: 90px;
 	h4 {
@@ -591,7 +557,6 @@ body::-webkit-scrollbar-thumb {
 		text-decoration: underline;
 		letter-spacing: 1px;
 	}
-
 	p {
 		color: #747474;
 		font-size: 19px;
@@ -612,7 +577,6 @@ body::-webkit-scrollbar-thumb {
 		text-decoration: underline;
 		letter-spacing: 1px;
 	}
-
 	p {
 		color: #747474;
 		font-size: 19px;
@@ -622,7 +586,6 @@ body::-webkit-scrollbar-thumb {
 		word-spacing: 1px;
 	}
 }
-
 .well {
 	background: #EEEEEE !important;
 }
@@ -663,18 +626,9 @@ body::-webkit-scrollbar-thumb {
 }
 .plans-main-block {
 	width: 100%;
-	// height: 350px;
 	background: #fff;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
 }
-#contact-background {
-	// background: image-url('contact-us.png');
-	// min-height: 550px;
-	// background-repeat: no-repeat;
-	// background-size: 100%;
-	// background-position: center;
-}
-
 #contact-banner {
 	background: image-url('contact-india.png');
 	min-height: 490px;
@@ -725,10 +679,11 @@ body::-webkit-scrollbar-thumb {
     }
 }
 .gcn-address {
-	height: 400px;
+	// height: 400px;
 	width: 100%;
 	background: #fa0808;
 	border-radius: 4px;
+	padding: 15px 15px 0px 15px;
 }
 .plans-main-block {
 	// padding: 20px;
@@ -874,7 +829,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contact-img {
 	width: 70%;
-	margin: 50px auto 0 auto;
+	margin: 75px auto 0 auto;
 }
 #plans-slider {
 	// width: 100% !important;
@@ -893,7 +848,7 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     border-radius: 4px;
     padding: 35px 0;
-    margin-top: 75px;
+    margin-top: 100px;
     background: #DEDEDE;
 	.high-speed-unlimited-one {
 		p {
@@ -915,7 +870,7 @@ body::-webkit-scrollbar-thumb {
 			font-weight: 600;
 			color: #FE0808;
 			margin: 5px 0;
-			text-shadow: 4px 4px 2px rgba(255, 0, 0, 0.44);
+			// text-shadow: 4px 4px 2px rgba(255, 0, 0, 0.44);
 			font-style: italic;
 		}
 	}
@@ -988,6 +943,14 @@ body::-webkit-scrollbar-thumb {
 	background: #F90808 ;
 	font-weight: bold;
 }
+.after-before-line {
+	content: '';
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0.73em;
+	border-top: 4px solid #F90808;
+}
 .new-business {
 	text-align: center;
 	width: 360px;
@@ -1012,12 +975,7 @@ body::-webkit-scrollbar-thumb {
 	        padding: 0 20px;
 
 	        &:before, &:after {
-	            content: '';
-	            display: block;
-	            width: 100%;
-	            position: absolute;
-	            top: 0.73em;
-	            border-top: 4px solid #F90808;
+	            @extend .after-before-line;
 	        }
 
 	        &:before { right: 100%; }
@@ -1058,15 +1016,125 @@ body::-webkit-scrollbar-thumb {
 	    padding: 0 20px;
 
 	    &:before, &:after {
-	        content: '';
-	        display: block;
-	        width: 100%;
-	        position: absolute;
-	        top: 0.73em;
-	        border-top: 4px solid #F90808;
+	        @extend .after-before-line;
 	    }
-
 	    &:before { right: 100%; }
 	    &:after { left: 100%; }
 	}
+}.career-tab-list {
+	ul {
+		padding: 0;
+		margin: 0;
+		li{
+			list-style: none;
+			font-size: 16px;
+			font-weight: 600;
+			background: red;
+			color: #fff;
+			font-family: 'Roboto Black';
+			margin-bottom: 1px;
+			padding: 5px 0px 5px 10px;
+			cursor: pointer;
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
 }
+.contact-person-no, .contact-telephone {
+	float: right;
+}
+.contact-panel {
+	margin-bottom: 15px;
+	.panel-heading {
+		.panel-title {
+			color: #F90808;
+			font-weight: 600;
+			font-family: 'Roboto Black'
+		}
+	}
+	.panel-body {
+		.contact-address {
+			p {
+				margin: 0;
+				font-family: 'Roboto Black';
+				font-size: 16px;
+				color: #5B5B5B;
+				line-height: 27px;
+			}
+		}
+	}
+	.panel-footer {
+		p {
+			margin: 0;
+			color: #FA0808;
+			font-size: 15px;
+			font-weight: 600;
+			font-family: 'Roboto Black';
+		}
+	}
+}
+.location-selector {
+	i {
+		position: absolute;
+		top: 0;
+		right: 8px;
+		line-height: 50px;
+		color: #fa0808;
+	}
+}
+.custom-text-field {
+	width: 100%;
+	border: 1px solid #fa0808;
+	line-height: 50px;
+	color: #FA0808;
+	font-weight: 600;
+	font-size: 16px;
+	font-family: 'Roboto Black';
+	height: 50px;
+	background: #fff;
+	padding-left: 15px;
+	border-radius: 0px;
+	box-shadow: 2px 2px 4px 1px #a9a9a9 inset;
+	cursor: pointer;
+
+}
+.custom-dropdown {
+	// width: 300px;
+	position: relative;
+}
+.slider-list {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12);
+	display: none; /* hides sub-menu */
+	position: absolute;
+	top: 49px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	li {
+		list-style: none;
+		font-size: 17px;
+		color: #616060;
+		padding: 8px 15px;
+		cursor: pointer;
+		font-family: 'Roboto Black';
+		&:hover {
+			background: #FA0808;
+			color: #fff;
+		}
+	}
+}
+
+// .dropanime {
+//   visibility: visible; /* shows sub-menu */
+//   opacity: 1;
+//   z-index: 1;
+//   webkit-transform: scale(1);
+//       -ms-transform: scale(1);
+//       transform: scale(1);
+//   transform: translateY(0%);
+//   transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+// }

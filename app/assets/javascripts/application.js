@@ -30,16 +30,18 @@ function dropdown(){
 		
 	  $("body").append("<select class=select><option>hey</option><option>hey</option></select>");
 	});
-	$('.group').hide();
-	$('#option1').show();
+
+	// Javascript for select contact box
 	
-	$(".withripple").mouseleave(function(){
-			$('.group').hide();
-			$('#'+$(".fakeinput").val()).show();
+
+	$('#career-options li').each(function(){
+		$(this).click(function(){
+			$('.ll').hide();
+			$('#'+$(this).val()).fadeIn();
+		});
 	});
 }
 ready = function() {
-	
 	var ready;
 	var winHeight = $(window).height();
 	var footerHeight = $('.footer-gcn').height();
